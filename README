@@ -1,0 +1,40 @@
+#  AuraQuant Enterprise Analytics v8.0
+
+> Terminal Quantitativo de Trading e Painel de Business Intelligence (BI) de Alta Performance construído com Python, Flask e TradingView.
+
+---
+
+##  Sobre o Projeto
+
+O **AuraQuant Enterprise** é uma plataforma analítica para mercado financeiro que combina monitoramento em tempo real (Ações B3, Forex e Criptomoedas), gráficos avançados do TradingView e um motor estatístico quantitativo baseado em indicadores como **RSI (14)**, **Z-Score**, **Volatilidade Implícita** e **Momentum**.
+
+###  Principais Recursos
+
+-  **Terminal de Trading Avançado:** Gráficos interativos em tempo real via TradingView Widget.
+-  **Painel BI Dinâmico:** Matriz de probabilidade de compra/venda, ranking de ativos e métricas atualizadas via API.
+-  **Segurança Institucional:** Proteção configurada para Content Security Policy (CSP) e filtro anti-SSRF para URLs externas.
+-  **Persistência SQL:** Armazenamento automático do histórico de métricas e auditorias via **SQLAlchemy**.
+-  **Interface Dark Glassmorphism:** Design moderno estilizado com Tailwind CSS e Google Fonts.
+
+---
+
+##  Tecnologias Utilizadas
+
+- **Backend:** Python 3.12+, Flask 3.0, Flask-SQLAlchemy 3.1
+- **Servidor de Produção:** Gunicorn 21.2
+- **Frontend:** Tailwind CSS (CDN), Chart.js, TradingView Widget API
+- **Banco de Dados:** SQLite (Desenvolvimento) / PostgreSQL (Suporte para Produção)
+
+---
+
+##  Estrutura de Arquivos do Projeto
+
+```text
+auraquant/
+│
+├── app.py              # Aplicação principal unificada (Rotas, Banco e Templates Virtualizados)
+├── requirements.txt    # Dependências do Python para o servidor/Render
+├── Procfile            # Comando de inicialização do Gunicorn para Deploy
+└── README.md           # Documentação oficial do projeto
+
+DATA DE CRIAÇÃO 14/08/2026
